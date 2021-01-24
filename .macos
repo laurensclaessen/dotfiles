@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+# No auto-hide delay Dock
+defaults write com.apple.dock autohide-delay -float 0
+
+# Fast auto-hide animation Dock
+defaults write com.apple.dock autohide-time-modifier -float 0.3
+
+# Kill app to persist changes
+killall Dock
